@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+ .navbar-brand{
+    color: white;
+    font-size: larger;
+ }
+ .btn-outline-success{
+    color: white;
+    border-color: white;
+ }
+ .nav-link{
+    color: white;
+ }
+
+.navbar .nav-item .nav-link.active {
+    border: 2px solid #da6220; /* Black border for the rectangle */
+    padding: 5px 10px; /* Add some padding for better appearance */
+    border-radius: 5px; /* Optional: rounded corners */
+    background-color: #fff; /* White background color */
+    color: #da6220; /* Text color inside the rectangle */
+}

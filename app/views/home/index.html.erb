@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id = "logos-border">
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <%= image_tag("paintlogo1.png", alt: "Boysen") %>
+            </div>
+            <div class="carousel-item">
+                <%= image_tag("paintlogo2.png", alt: "Sphero") %>
+            </div>
+            <div class="carousel-item">
+                <%= image_tag("paintlogo3.png", alt: "Guilder") %>
+            </div>
+            <div class="carousel-item">
+                <%= image_tag("paintlogo4.png", alt: "Davies") %>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to Our Responsive Webpage</h1>
-            <p>This is a simple example of a responsive webpage.</p>
-        </section>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-frame">
+                    <div class="caption">Product 1</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-frame">
+                    <div class="caption">Product 2</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-frame">
+                    <div class="caption">Product 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Information about the company or website.</p>
-        </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Details about the services offered.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Contact information and form.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Responsive Webpage. All rights reserved.</p>
-    </footer>
+</div>
 </body>
 </html>

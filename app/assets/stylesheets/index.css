@@ -1,0 +1,51 @@
+ /* Custom CSS to ensure the images are centered and fit properly */
+
+#logos-border{
+    border: 2px solid #da6220; /* Add a 2px solid black border */
+    padding: 10px; /* Optional: Add some padding inside the border */
+    height: 260px;
+    
+}
+
+.carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; /* Cover the area, preserving aspect ratio */
+    margin-top: -130px;
+}
+
+.product-frame {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (height/width * 100) */
+    margin-bottom: 20px; /* Space between frames */
+}
+
+.product-frame img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the frame */
+}
+
+.product-frame .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .product-frame {
+        padding-top: 75%; /* Adjust aspect ratio for smaller screens (4:3) */
+    }
+}
