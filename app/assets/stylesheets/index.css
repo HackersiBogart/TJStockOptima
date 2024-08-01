@@ -1,5 +1,11 @@
  /* Custom CSS to ensure the images are centered and fit properly */
 
+ #tagline{
+    font-weight: lighter;
+    color: #da6220;
+    font-style: italic;
+    padding-left: 350px;
+ }
 #logos-border{
     border: 2px solid #da6220; /* Add a 2px solid black border */
     padding: 10px; /* Optional: Add some padding inside the border */
@@ -49,3 +55,14 @@
         padding-top: 75%; /* Adjust aspect ratio for smaller screens (4:3) */
     }
 }
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .product-frame {
+        padding-top: 75%; /* Adjust aspect ratio for smaller screens (4:3) */
+    }
+}
+
+
+
+
+
