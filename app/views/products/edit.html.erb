@@ -1,16 +1,19 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8 offset-md-2">
-      <h1 class="mb-4 text-center">Editing Product</h1>
+      <h1 class="page-title">Editing Product</h1>
 
-      <%= render "form", product: @product %>
+      <div class="form-container">
+        <%= render "form", product: @product %>
+      </div>
 
       <br>
 
-      <div class="d-flex justify-content-between">
+      <div class="button-group">
         <%= link_to "Show this product", @product, class: "btn btn-info" %>
-        <%= link_to "Back to products", products_path, class: "btn btn-secondary" %>
+        <%= link_to "Back to products", products_path, class: "btn btn-secondary", id: "edit-back-products" %>
       </div>
     </div>
   </div>
 </div>
+

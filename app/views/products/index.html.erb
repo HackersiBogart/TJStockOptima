@@ -1,15 +1,18 @@
+
+
 <p style="color: green"><%= notice %></p>
 
-<h1>Products</h1>
+<h1 class = "producttitle">Products</h1>
+<p class = "newproduct">
+<%= link_to "New product", new_product_path, class: "btn btn-success" %>
+</p>
 <div id="products">
   <% @products.each do |product| %>
     <div class="product-item mb-3 p-3 border rounded">
       <%= render product %>
-      <p>
-        <%= link_to "Show this product", product, class: "btn btn-primary" %>
+      <p class = "showproduct">
+        <%= link_to "Show this product", product, class: "btn btn-primary", id:"show-product-button" %>
       </p>
     </div>
   <% end %>
 </div>
-
-<%= link_to "New product", new_product_path, class: "btn btn-success" %>
