@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_01_063411) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_07_022855) do
+  create_table "customers", force: :cascade do |t|
+    t.string "customer_id"
+    t.string "customer_first_name"
+    t.string "customer_last_name"
+    t.string "customer_email"
+    t.string "customer_phone_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "inventories", force: :cascade do |t|
     t.integer "quantity_available"
     t.integer "minimum_stock_level"
     t.integer "maximum_stock_level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "max_quantity"
+    t.integer "min_quantity"
   end
 
   create_table "products", force: :cascade do |t|

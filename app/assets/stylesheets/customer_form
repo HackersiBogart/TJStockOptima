@@ -1,0 +1,53 @@
+
+.error-messages {
+    background-color: #fdd;
+    border: 1px solid #d00;
+    border-radius: 5px;
+    color: #d00;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.error-messages h2 {
+    margin-top: 0;
+}
+
+.error-messages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.error-messages li {
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
