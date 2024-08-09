@@ -3,7 +3,7 @@
 <%= render @customer %>
 
 <div class="button-group">
-  <%= link_to "Edit", edit_customer_path(@customer), class: "btn btn-primary", id: "show-edit-customers"%> |
+  <%= link_to "Edit", edit_customer_path(@customer), class: "btn btn-primary", id: "show-edit-customers"%> 
   <%= button_to "Delete", @customer, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger", id: "show-delete-customers" %>
 </div>
 

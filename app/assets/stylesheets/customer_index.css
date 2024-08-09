@@ -5,6 +5,11 @@
 
  .newcustomer{
     padding-left: 1090px;
-    padding-top: -200px; 
+    padding-top: 20px;
+     
  }
 
+ .show_customer_button{
+   padding-left: 340px;
+   padding-top: 20px;
+ }

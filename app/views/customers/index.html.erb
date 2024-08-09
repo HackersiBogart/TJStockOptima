@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="customer_index.css">
+<p class = "newcustomer">
+<%= link_to "New customer", new_customer_path, class: "btn btn-success"%>
+</p>
 <p style="color: green"><%= notice %></p>
 <h1 class ="customertitle">Customers</h1>
 <div id="customers">
   <% @customers.each do |customer| %>
     <%= render customer %>
-    <p>
-      <%= link_to "Show this customer", customer %>
+    <p class = "show_customer_button">
+      <%= link_to "Show this customer", customer, class: "btn btn-primary" %>
     </p>
   <% end %>
 </div>
 
-<p class = "newcustomer">
-<%= link_to "New customer", new_customer_path, class: "btn btn-success" %>
-</p>
