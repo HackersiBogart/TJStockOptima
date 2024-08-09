@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.notice {
+    color: green;
+    background-color: #e6ffe6;
+    border: 1px solid #00cc00;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.customer-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.customer-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.customer-item:last-child {
+    border-bottom: none;
+}
+
+.customer-item strong {
+    color: #333;
+    margin-right: 10px;
+}
+
+.customer-item span {
+    color: #555;
+}
+
+.action-links {
+    margin-top: 20px;
+}
+
+.edit-link, .back-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.edit-link:hover, .back-link:hover {
+    text-decoration: underline;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.destroy-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.destroy-button:hover {
+    background-color: #c9302c;
+}
+
+#show-edit-customers{
+    margin-left: 250px; 
+
+}
+
+#show-delete-customers{
+  
+    margin-right: 800px;
+}

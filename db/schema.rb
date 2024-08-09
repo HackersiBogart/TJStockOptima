@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.1].define(version: 2024_08_07_022855) do
   create_table "customers", force: :cascade do |t|
-    t.string "customer_id"
     t.string "customer_first_name"
     t.string "customer_last_name"
     t.string "customer_email"
@@ -32,7 +31,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_07_022855) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.integer "ProductID"
     t.string "ProductCode", limit: 100
     t.string "ProductName", limit: 100
     t.string "ProductDescription", limit: 2000
