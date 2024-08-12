@@ -15,43 +15,42 @@
     <div class="row">
 
       <div class="col-md-6 form-group">
-        <%= form.label :ProductCode, class: "form-label" %>
+        <label class="form-label" for="product_ProductCode">Product Code</label>
         <%= form.text_field :ProductCode, class: "form-control", required: true %>
         <div class="invalid-feedback">
           Please provide a valid Product Code.
         </div>
-      </div>
-    </div>
-
-    <div class="row">
+      </div>  
+       
       <div class="col-md-6 form-group">
-        <%= form.label :ProductName, class: "form-label" %>
+        <label class="form-label" for="product_ProductCode">Product Name</label>
         <%= form.text_field :ProductName, class: "form-control", required: true %>
         <div class="invalid-feedback">
           Please provide a valid Product Name.
         </div>
       </div>
+      </div>
 
+    <div class="row">
       <div class="col-md-6 form-group">
-        <%= form.label :ProductDescription, class: "form-label" %>
+        <label class="form-label" for="product_ProductCode">Product Description</label>
         <%= form.text_field :ProductDescription, class: "form-control", required: true %>
         <div class="invalid-feedback">
           Please provide a valid Product Description.
         </div>
       </div>
-    </div>
 
-    <div class="row">
       <div class="col-md-6 form-group">
-        <%= form.label :ProductCategory, class: "form-label" %>
+        <label class="form-label" for="product_ProductCode">Product Category</label>
         <%= form.text_field :ProductCategory, class: "form-control", required: true %>
         <div class="invalid-feedback">
           Please provide a valid Product Category.
         </div>
       </div>
+    </div>
 
       <div class="col-md-6 form-group">
-        <%= form.label :ProductUnitPrice, class: "form-label" %>
+        <label class="form-label" for="product_ProductCode">Product Unit Price</label>
         <%= form.number_field :ProductUnitPrice, class: "form-control", required: true %>
         <div class="invalid-feedback">
           Please provide a valid Product Unit Price.
