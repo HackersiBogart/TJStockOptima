@@ -1,0 +1,33 @@
+<%= form_with(model: color, local: true, html: { multipart: true }) do |form| %>
+  <% if color.errors.any? %>
+    <div id="error-messages">
+      <h2 id="error-heading"><%= pluralize(color.errors.count, "error") %> prohibited this color from being saved:</h2>
+
+      <ul id="error-list">
+        <% color.errors.each do |error| %>
+          <li id="error-item"><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div id="color-form-group">
+    <label for="color_image" id="color_image_label">Select Color Image:</label>
+    <%= form.file_field :image_color, id: "color_image" %>
+  </div>
+
+  <div id="color-form-group">
+    <label for="color_name" id="color_name_label">Color Name:</label>
+    <%= form.text_field :name_color, id: "color_name" %>
+  </div>
+
+  <div id="color-form-group">
+    <label for="color_code" id="color_code_label">Color Code:</label>
+    <%= form.text_field :code_color, id: "color_code" %>
+
+  </div>
+
+  <div>
+    <%= form.submit "Save Color", id: "submit-button" %>
+  </div>
+<% end %>

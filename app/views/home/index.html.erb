@@ -33,8 +33,14 @@
     </div>
     </div>
 
+<% if @color.image_color.attached? %>
+  <%= image_tag @color.image_color %>
+<% else %>
+  <p>No image uploaded.</p>
+<% end %>
 
 <div class="container">
+    
         <div class="row">
             <div class="col-md-4">
                 <div class="product-frame">

@@ -1,0 +1,29 @@
+
+<p class="alert alert-success"><%= notice %></p>
+
+<h1>Colors</h1>
+
+<div id="colors" class="container">
+  <div class="row">
+    <% @colors.each do |color| %>
+      <div class="col-md-4 color-item card mb-4 shadow-sm">
+        <div class="card-body">
+          <% if color.image_color.attached? %>
+            <%= image_tag color.image_color, class: "card-img-top" %>
+          <% else %>
+            <p class="text-muted">No image uploaded.</p>
+          <% end %>
+          <div class="card-text">
+            <%= render color %>
+          </div>
+          <p class="mt-3">
+            <%= link_to "Show this color", color, class: "btn btn-primary" %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "New color", new_color_path, class: "btn btn-success" %>
+
