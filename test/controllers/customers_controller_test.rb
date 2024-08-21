@@ -17,7 +17,7 @@ class CustomersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create customer" do
     assert_difference("Customer.count") do
-      post customers_url, params: { customer: { customer_email: @customer.customer_email, customer_first_name: @customer.customer_first_name, customer_id: @customer.customer_id, customer_last_name: @customer.customer_last_name, customer_phone_number: @customer.customer_phone_number } }
+      post customers_url, params: { customer: { customer_email: @customer.customer_email, customer_first_name: @customer.customer_first_name, customer_id: @customer.customer_id, customer_last_name: @customer.customer_last_name, customer_phone_number: @customer.customer_phone_number, created_at: @customer.created_at  } }
     end
 
     assert_redirected_to customer_url(Customer.last)
@@ -34,7 +34,7 @@ class CustomersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update customer" do
-    patch customer_url(@customer), params: { customer: { customer_email: @customer.customer_email, customer_first_name: @customer.customer_first_name, customer_id: @customer.customer_id, customer_last_name: @customer.customer_last_name, customer_phone_number: @customer.customer_phone_number } }
+    patch customer_url(@customer), params: { customer: { customer_email: @customer.customer_email, customer_first_name: @customer.customer_first_name, customer_id: @customer.customer_id, customer_last_name: @customer.customer_last_name, customer_phone_number: @customer.customer_phone_number, created_at: @customer.created_at } }
     assert_redirected_to customer_url(@customer)
   end
 

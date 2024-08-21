@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_15_003620) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_21_234944) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -57,6 +57,21 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_15_003620) do
     t.string "customer_phone_number", limit: 20
   end
 
+  create_table "pages", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "preorders", force: :cascade do |t|
+    t.string "color"
+    t.date "target_date"
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "ProductCode", limit: 100
     t.string "ProductName", limit: 100
@@ -65,6 +80,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_15_003620) do
     t.integer "ProductUnitPrice"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "ProductQuantity"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

@@ -30,8 +30,8 @@
 </nav>
 <p class="alert alert-success"><%= notice %></p>
 
-<h1>Colors</h1>
-
+<h1 class = "producttitle">Colors</h1>
+<%= link_to "New color", new_color_path, class: "btn btn-success", id: "newcolor_btn"%>
 <div id="colors" class="container">
   <div class="row">
     <% @colors.each do |color| %>
@@ -54,5 +54,5 @@
   </div>
 </div>
 
-<%= link_to "New color", new_color_path, class: "btn btn-success" %>
+
 

@@ -1,0 +1,32 @@
+<%= form_with(model: preorder) do |form| %>
+  <% if preorder.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(preorder.errors.count, "error") %> prohibited this preorder from being saved:</h2>
+
+      <ul>
+        <% preorder.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :color, style: "display: block" %>
+    <%= form.text_field :color %>
+  </div>
+
+  <div>
+    <%= form.label :target_date, style: "display: block" %>
+    <%= form.date_field :target_date %>
+  </div>
+
+  <div>
+    <%= form.label :quantity, style: "display: block" %>
+    <%= form.number_field :quantity %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -31,6 +31,8 @@
       </div>
       </div>
 
+      
+
     <div class="row">
       <div class="col-md-6 form-group">
         <label class="form-label" for="product_ProductCode">Product Description</label>
@@ -49,11 +51,22 @@
       </div>
     </div>
 
+    
+    <div class="row">
       <div class="col-md-6 form-group">
         <label class="form-label" for="product_ProductCode">Product Unit Price</label>
         <%= form.number_field :ProductUnitPrice, class: "form-control", required: true %>
         <div class="invalid-feedback">
           Please provide a valid Product Unit Price.
+        </div>
+      </div>
+    
+
+    <div class="col-md-6 form-group">
+        <label class="form-label" for="product_ProductCode">Quantity</label>
+        <%= form.text_field :ProductQuantity, class: "form-control", required: true %>
+        <div class="invalid-feedback">
+          Please provide a valid Product Quantity.
         </div>
       </div>
     </div>

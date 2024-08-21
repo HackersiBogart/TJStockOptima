@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Preorders</h1>
+
+<div id="preorders">
+  <% @preorders.each do |preorder| %>
+    <%= render preorder %>
+    <p>
+      <%= link_to "Show this preorder", preorder %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New preorder", new_preorder_path %>

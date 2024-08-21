@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @preorder %>
+
+<div>
+  <%= link_to "Edit this preorder", edit_preorder_path(@preorder) %> |
+  <%= link_to "Back to preorders", preorders_path %>
+
+  <%= button_to "Destroy this preorder", @preorder, method: :delete %>
+</div>

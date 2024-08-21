@@ -1,0 +1,2 @@
+class Preorder < ApplicationRecord
+end
